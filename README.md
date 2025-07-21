@@ -123,17 +123,3 @@ Follow these steps to get the project running on your local machine.
 -   **Asynchronous Task Handling:** The initial synchronous implementation would freeze when processing large documents. This was rectified by refactoring the AI logic into synchronous functions and using FastAPI's `asyncio.to_thread` to run them in a separate thread, keeping the server responsive.
 
 ---
-
-## 📚 Relevant Research
-
-The architecture of this project is heavily inspired by foundational research in Natural Language Processing. The core concept of Retrieval-Augmented Generation was formalized in papers like:
-
-```latex
-@article{lewis2020retrieval,
-  title={Retrieval-augmented generation for knowledge-intensive nlp tasks},
-  author={Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K{\"u}ttler, Heinrich and Ott, Myle and Chen, Wen-tau and Conneau, Alexis and others},
-  journal={Advances in Neural Information Processing Systems},
-  volume={33},
-  pages={9459--9474},
-  year={2020}
-}
